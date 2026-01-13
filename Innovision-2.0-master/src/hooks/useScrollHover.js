@@ -38,5 +38,3 @@ export const useScrollHover = (selector, options = {}) => {
         };
     }, [selector, options.threshold, options.rootMargin, options.removeOnExit]);
 };
-
-export default useScrollHover;

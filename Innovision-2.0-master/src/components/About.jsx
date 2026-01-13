@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BookOpen, Cpu } from 'lucide-react';
-import useScrollHover from '../hooks/useScrollHover';
+import { useScrollHover } from '../hooks/useScrollHover';
 
 gsap.registerPlugin(ScrollTrigger);
 

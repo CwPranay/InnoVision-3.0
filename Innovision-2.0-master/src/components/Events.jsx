@@ -4,7 +4,7 @@ import { X, Calendar, MapPin, Users, Trophy } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import RegistrationModal from './RegistrationModal';
-import useScrollHover from '../hooks/useScrollHover';
+import { useScrollHover } from '../hooks/useScrollHover';
 
 gsap.registerPlugin(ScrollTrigger);
 

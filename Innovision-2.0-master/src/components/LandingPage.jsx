@@ -12,7 +12,7 @@ import ScrollProgress from './ScrollProgress';
 import FloatingActions from './FloatingActions';
 
 const LandingPage = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); // Re-enabled preloader
 
     return (
         <>
