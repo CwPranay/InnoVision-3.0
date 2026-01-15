@@ -72,11 +72,7 @@ const Footer = () => {
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
                         © 2026 Innovision 3.0.
                     </p>
-                    <div className="flex items-center space-x-2 text-gray-500 text-sm">
-                        <span>Designed with</span>
-                        <span className="text-red-500">♥</span>
-                        <span>by IT Department</span>
-                    </div>
+                    
                 </div>
             </div>
 

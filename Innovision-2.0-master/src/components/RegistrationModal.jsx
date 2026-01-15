@@ -101,7 +101,7 @@ const RegistrationModal = ({ event, onClose }) => {
                 initial={{ scale: 0.9, y: 30 }}
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.9, y: 30 }}
-                className="relative w-full max-w-lg bg-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden shadow-2xl p-8 my-8"
+                className="relative w-full max-w-lg bg-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden shadow-2xl p-5 sm:p-8 my-8"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
@@ -112,7 +112,7 @@ const RegistrationModal = ({ event, onClose }) => {
                 </button>
 
                 <div className="mb-6">
-                    <h2 className="text-2xl font-orbitron font-bold text-white mb-2">
+                    <h2 className="text-xl sm:text-2xl font-orbitron font-bold text-white mb-2">
                         Register for <span className="text-neon-purple">{event.title}</span>
                     </h2>
                     <p className="text-gray-400 text-sm">Fill in your details to secure your spot.</p>
@@ -154,7 +154,8 @@ const RegistrationModal = ({ event, onClose }) => {
                             />
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
+                        {/* ✅ mobile: 1 col, md+: 2 col */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="space-y-1">
                                 <label className="text-xs text-gray-500 uppercase tracking-wider ml-1">
                                     {isFreeFire ? "IGL Email" : (isTeamEvent ? "Leader Email" : "Email")}
@@ -185,7 +186,8 @@ const RegistrationModal = ({ event, onClose }) => {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
+                        {/* ✅ mobile: 1 col, md+: 2 col */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="space-y-1">
                                 <label className="text-xs text-gray-500 uppercase tracking-wider ml-1">Class</label>
                                 <input
@@ -227,6 +229,7 @@ const RegistrationModal = ({ event, onClose }) => {
                                         placeholder="Enter Team Name"
                                     />
                                 </div>
+
                                 <div className="space-y-3 pt-2">
                                     <span className="text-sm font-semibold text-white">
                                         {isFreeFire ? "Squad Members" : "Team Members"}
