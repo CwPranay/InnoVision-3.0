@@ -94,14 +94,14 @@ const RegistrationModal = ({ event, onClose }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[150] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md overflow-y-auto"
+            className="fixed inset-0 z-[2000] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md overflow-y-auto"
             onClick={onClose}
         >
             <motion.div
                 initial={{ scale: 0.9, y: 30 }}
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.9, y: 30 }}
-                className="relative w-full max-w-lg bg-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden shadow-2xl p-5 sm:p-8 my-8"
+                className="relative w-full z-[2001] max-w-lg bg-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden shadow-2xl p-5 sm:p-8 my-8"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
